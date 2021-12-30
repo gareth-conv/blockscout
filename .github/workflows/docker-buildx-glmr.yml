@@ -40,9 +40,9 @@ jobs:
         run: |
           docker buildx build -t ${DOCKER_REPOSITORY}:latest-amd64 --platform linux/amd64 --output=type=docker -f docker/Dockerfile .
 
-      - name: Build linux/arm64 Image
-        run: |
-          docker buildx build -t ${DOCKER_REPOSITORY}:latest-arm64 --platform linux/arm64 --output=type=docker -f docker/Dockerfile .
+      # - name: Build linux/arm64 Image
+      #   run: |
+      #     docker buildx build -t ${DOCKER_REPOSITORY}:latest-arm64 --platform linux/arm64 --output=type=docker -f docker/Dockerfile .
 
       - name: Push Multi-Arch Images
         run: |
