@@ -2,7 +2,7 @@ name: Build Multi-Arch Images
 
 on:
   push:
-    branch:
+    branches:
       - master
 
 defaults:
