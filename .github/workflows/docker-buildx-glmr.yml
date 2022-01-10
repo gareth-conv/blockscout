@@ -3,7 +3,7 @@ name: Build Multi-Arch Images
 on:
   push:
     branches:
-      - glmr
+      - glmr-test
 
 defaults:
   run:
