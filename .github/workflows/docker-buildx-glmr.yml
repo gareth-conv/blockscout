@@ -48,5 +48,5 @@ jobs:
         run: |
           docker push ${DOCKER_REPOSITORY}:latest-amd64
           docker manifest create ${DOCKER_REPOSITORY}:latest \
-            ${DOCKER_REPOSITORY}:latest-amd64 
+            ${DOCKER_REPOSITORY}:latest-amd64 --amend
           docker manifest push ${DOCKER_REPOSITORY}:latest
